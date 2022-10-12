@@ -2,6 +2,11 @@
 $font-family_1: "Montserrat", sans-serif;
 $font-family_2: "Merriweather", serif;
 
+.section {
+  h1 {
+    line-height: 10rem;
+  }
+}
 .advantages {
   display: flex;
   gap: 1.5rem;
@@ -31,5 +36,4 @@ $font-family_2: "Merriweather", serif;
     margin: 0;
     margin-top: auto;
   }
-
 }

@@ -1,27 +1,22 @@
-import { advantages } from "../data.js"
-import advArticle from "./advArticle.js"
-import "./advSection.scss"
+import { advantages } from "../data.js";
+import advArticle from "./advArticle.js";
+import "./advSection.scss";
 
+console.log(advantages);
+let advSection = function () {
+  let element = document.createElement("div");
+  element.classList.add("advantages");
 
-console.log(advantages)
-let advSection = function() {
+  advantages.forEach((advantage) => {
+    console.log(advantage);
 
-let element = document.createElement('div')
-element.classList.add('advantages')
+    let article = document.createElement("article");
 
-advantages.forEach(advantage => {
-    console.log(advantage)
+    element.append(article);
+    element.append(advArticle(advantage));
+  });
 
-    let article = document.createElement("article")
+  return element;
+};
 
-    element.append(article)
-    element.append(advArticle(advantage))
-
-
-})
-
-
-return element
-}
-
-export default advSection
+export default advSection;

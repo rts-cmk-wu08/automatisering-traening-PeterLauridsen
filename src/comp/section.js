@@ -1,17 +1,18 @@
-import advSection from "./advSection.js";
-import "./section.scss";
+import advSection from "./advSection.js"
+import "./section.scss"
 
-let section = function () {
-  let element = document.createElement("section");
-  element.classList.add("section");
+let section = function() {
 
-  element.innerHTML = `
+let element = document.createElement('section')
+element.classList.add("section")
+
+element.innerHTML = `
     <h1>Our Advantages</h1>
-`;
+`
 
-  element.append(advSection());
+element.append(advSection())
 
-  return element;
-};
+return element
+}
 
-export default section;
+export default section
